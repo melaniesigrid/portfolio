@@ -57,8 +57,6 @@ i {
   font-size: 2rem;
 }
 
-.social-links>a,
-a:link,
-a:visited {
+.social-links > a, a:link, a:visited {
   color: #505F79;
 }
