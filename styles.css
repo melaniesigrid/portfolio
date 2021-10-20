@@ -8,7 +8,7 @@ i {
 
 
 .navbar {
-  color: #28352F;
+  color: #28352f;
   font-weight: 600;
   font-size: 20px;
   display: flex;
@@ -17,7 +17,7 @@ i {
 }
 
 .hamburger {
-  color: #28352F;
+  color: #28352f;
   font-size: 35px;
   margin-left: auto;
 }
@@ -30,21 +30,21 @@ i {
 }
 
 .title {
-  color: #172B4D;
+  color: #172b4d;
   font-weight: bold;
   font-size: 40px;
   text-align: center;
 }
 
 .title-2 {
-  color: #36B37E;
+  color: #36b37e;
   font-weight: bold;
   font-size: 40px;
   text-align: center;
 }
 
 .large-text {
-  color: #172B4D;
+  color: #172b4d;
   font-size: 20px;
   font-weight: normal;
   text-align: center;
@@ -57,6 +57,8 @@ i {
   font-size: 2rem;
 }
 
-.social-links > a, a:link, a:visited {
-  color: #505F79;
+.social-links > a,
+a:link,
+a:visited {
+  color: #505f79;
 }
