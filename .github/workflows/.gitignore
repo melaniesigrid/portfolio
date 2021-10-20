@@ -1,0 +1,8 @@
+# Ignore the following files
+
+#Node modules
+node_modules/
+
+#Linter
+*.hintrc
+
