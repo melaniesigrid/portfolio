@@ -1,8 +1,25 @@
+body {
+font-family: 'Inter', sans-serif;
+}
+
 .navbar {
   background-color: #E5E5E5;
+  color: #28352F;
 }
 
 .start-header {
   background-image: url(images/header-illustration-mobile@2x.png);
+}
+
+.title {
+  color: #172B4D;
+}
+
+.title-2 {
+  color: #36B37E; 
+}
+
+.large-text {
+  color: #172B4D;
 }
 
