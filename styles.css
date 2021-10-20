@@ -1,9 +1,8 @@
 body {
-font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .navbar {
-  background-color: #E5E5E5;
   color: #28352F;
   font-weight: 600;
   font-size: 20px;
@@ -21,10 +20,15 @@ font-family: 'Inter', sans-serif;
 }
 
 .title-2 {
-  color: #36B37E; 
+  color: #36B37E;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
 }
 
 .large-text {
   color: #172B4D;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
 }
-
