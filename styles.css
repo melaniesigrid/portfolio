@@ -6,10 +6,20 @@ body {
   color: #28352F;
   font-weight: 600;
   font-size: 20px;
+  display: flex;
+}
+
+.hamburger {
+  color: #28352F;
+  font-size: 40px;
+  margin-left: auto;
 }
 
 .start-header {
+  display: flex;
+  flex-direction: column;
   background-image: url(images/header-illustration-mobile@2x.png);
+  background-size: cover;
 }
 
 .title {
