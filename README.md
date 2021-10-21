@@ -4,7 +4,7 @@
 
 > A portfolio to showcase my work.
 
-![screenshot](./app_screenshot.png)
+![screenshot](images/app_screenshot.png)
 
 ## Authors
 
