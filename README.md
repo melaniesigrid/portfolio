@@ -10,8 +10,8 @@
 
 👤 **Melanie Sigrid**
 
-- GitHub: [@githubhandle](https://github.com/melaniesigrid)
-- Twitter: [@twitterhandle](https://twitter.com/SiriMoon11)
+- GitHub: [@melaniesigrid](https://github.com/melaniesigrid)
+- Twitter: [@SiriMoon11](https://twitter.com/SiriMoon11)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/melanie-arellano-92aaa9194/)
 
 ## 🤝 Contributing
