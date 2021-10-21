@@ -16,6 +16,10 @@ i {
   max-height: 45px;
 }
 
+.welcome-text {
+  padding-left: 20px;
+}
+
 .hamburger {
   color: #28352f;
   font-size: 35px;
@@ -57,7 +61,7 @@ i {
   font-size: 2rem;
 }
 
-.social-links > a,
+.social-links>a,
 a:link,
 a:visited {
   color: #505f79;
