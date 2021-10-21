@@ -6,7 +6,6 @@ i {
   padding: 10px;
 }
 
-
 .navbar {
   color: #28352f;
   font-weight: 600;
@@ -61,7 +60,7 @@ i {
   font-size: 2rem;
 }
 
-.social-links>a,
+.social-links > a,
 a:link,
 a:visited {
   color: #505f79;
