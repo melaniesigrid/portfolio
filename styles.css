@@ -163,6 +163,12 @@ a:visited {
   border-radius: 8px; 
 }
 
+.project-title {
+  color: #3a4a42;
+  font-weight: 600;
+  font-size: 24px;
+}
+
 .about-myself {
   display: flex;
   flex-direction: column;
