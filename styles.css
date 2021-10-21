@@ -1,5 +1,14 @@
 body {
   font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  gap: 20px;
 }
 
 i {
@@ -13,23 +22,28 @@ i {
   display: flex;
   align-items: center;
   max-height: 45px;
-}
-
-.welcome-text {
-  padding-left: 20px;
+  padding: 10px 24px;
 }
 
 .hamburger {
   color: #28352f;
-  font-size: 35px;
+  font-size: 25px;
   margin-left: auto;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
 }
 
-.start-header {
+.hamburger-container > nav {
+  display: none;
+}
+
+.presentation {
   display: flex;
   flex-direction: column;
   background-image: url(images/header-illustration-mobile@2x.png);
   background-size: cover;
+  padding: 64px 24px;
 }
 
 .title {
@@ -37,6 +51,7 @@ i {
   font-weight: bold;
   font-size: 40px;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .title-2 {
@@ -58,10 +73,25 @@ i {
   justify-content: center;
   text-decoration: none;
   font-size: 2rem;
+  list-style-type: none;
+  padding: 0;
 }
 
 .social-links > a,
 a:link,
 a:visited {
   color: #505f79;
+}
+
+.desktop-menu {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .hamburger-container {
+    display: none;
+  }
+  .desktop-menu {
+    display: block;
+  }
 }
