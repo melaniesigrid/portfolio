@@ -113,6 +113,17 @@ a:visited {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  margin: auto;
+  text-align: center;
+  text-decoration: none;
+}
+
+.downward {
+  color: #172b4d;
+  width: 12px;
+  height: 6px;
+  padding: 0;
+  cursor: pointer;
 }
 
 .rounded {
@@ -130,6 +141,26 @@ a:visited {
 
 .card-container {
   display: grid;
+  justify-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 327px;
+  height: 474px;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  border: #d0d9d4 solid;
+  border-width: 1px;
+}
+
+.cardlet {
+  background-color: white;
+  width: 327px;
+  height: 222px;
+  border-radius: 8px; 
 }
 
 .about-myself {
