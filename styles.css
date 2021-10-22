@@ -170,6 +170,68 @@ a:visited {
   font-size: 24px;
 }
 
+.languages-container {
+  display: flex;
+}
+
+.language-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  margin: 0 8px 0 8px;
+  text-align: center;
+  height: 32px;
+}
+
+#ruby {
+  width: 103px;
+}
+
+#css {
+  width: 45px;
+}
+
+#js {
+  width: 82px;
+}
+
+#html {
+  width: 51px;
+}
+
+.language-text {
+  color: #3a4a42;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.see-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.see-project {
+  width: 122px;
+  height: 48px;
+  background-color: #36b37f;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 12px;
+}
+
 .about-myself {
   display: flex;
   flex-direction: column;
