@@ -82,7 +82,7 @@ i {
   padding: 0;
 }
 
-.social-links>a,
+.social-links > a,
 a:link,
 a:visited {
   color: #505f79;
@@ -115,12 +115,6 @@ a:visited {
   justify-content: center;
 }
 
-.works {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
 .chevron-button {
   background-color: white;
   border: 1px solid lightgray;
@@ -132,13 +126,19 @@ a:visited {
   cursor: pointer;
 }
 
+.downward {
+  color: #172b4d;
+  padding: 0;
+}
+
 .chevron-button:hover .downward {
   opacity: 70%;
 }
 
-.downward {
-  color: #172b4d;
-  padding: 0;
+.works {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .rounded {
