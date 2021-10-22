@@ -301,13 +301,75 @@ a:visited {
 }
 
 .skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 327px;
   height: 352px;
   border-radius: 8px;
-  border: 1px #d0d9d4 solid;
+  border: 1px #c1c7d0 solid;
+  background-color: #ebf0ee;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: 40px;
+}
+
+#language-img {
+  width: 48px;
+  height: 48px;
+}
+
+#frameworks-img {
+  width: 48px;
+  height: 48px;
+
+}
+
+#skills-img {
+  width: 48px;
+  height: 48px;
+
+}
+
+.skill-title {
+  color: #344563;
+  font-weight: 600;
+  font-size: 24px;
 }
 
 .skill-container {
-display: flex;
-flex-direction: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.skill-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 4px;
+  text-align: center;
+  color: #36b37e;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+}
+
+#rails {
+  width: 103px;
+}
+
+.skill-text {
+  margin: 12px;
 }
