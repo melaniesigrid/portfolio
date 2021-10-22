@@ -39,7 +39,7 @@ i {
   background-color: white;
 }
 
-.hamburger-container>nav {
+.hamburger-container > nav {
   display: none;
 }
 
@@ -126,13 +126,13 @@ a:visited {
   cursor: pointer;
 }
 
+.chevron-button:hover {
+  opacity: 70%;
+}
+
 .downward {
   color: #172b4d;
   padding: 0;
-}
-
-.chevron-button:hover .downward {
-  opacity: 70%;
 }
 
 .works {
