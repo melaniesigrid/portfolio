@@ -20,6 +20,13 @@ i {
   padding: 10px;
 }
 
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
 .navbar {
   color: #28352f;
   font-weight: 600;
@@ -39,7 +46,7 @@ i {
   background-color: white;
 }
 
-.hamburger-container > nav {
+.hamburger-container>nav {
   display: none;
 }
 
@@ -82,7 +89,7 @@ i {
   padding: 0;
 }
 
-.social-links > a,
+.social-links>a,
 a:link,
 a:visited {
   color: #505f79;
@@ -267,4 +274,40 @@ a:visited {
   color: #42526e;
   font-weight: 400;
   font-size: 20px;
+  gap: 12px;
+}
+
+.get-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.get-resume {
+  background-color: #36b37f;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 12px;
+}
+
+.skill-card {
+  width: 327px;
+  height: 352px;
+  border-radius: 8px;
+  border: 1px #d0d9d4 solid;
+}
+
+.skill-container {
+display: flex;
+flex-direction: wrap;
 }
