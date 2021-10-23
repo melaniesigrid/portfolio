@@ -316,6 +316,10 @@ a:visited {
   padding: 12px;
 }
 
+.get-resume:hover {
+  opacity: 70%;
+}
+
 .skill-card {
   display: flex;
   flex-direction: column;
