@@ -52,7 +52,7 @@ ul {
   background-color: white;
 }
 
-.hamburger-container>nav {
+.hamburger-container > nav {
   display: none;
 }
 
@@ -82,8 +82,9 @@ ul {
 .large-text {
   color: #172b4d;
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 400;
   text-align: center;
+  line-height: 28px;
 }
 
 .social-links {
@@ -95,7 +96,7 @@ ul {
   padding: 0;
 }
 
-.social-links>a,
+.social-links > a,
 a:link,
 a:visited {
   color: #505f79;
@@ -262,20 +263,24 @@ a:visited {
   opacity: 70%;
 }
 
-#paper-bird-1 {
+.paper-bird {
   position: absolute;
   right: 0;
   width: 68px;
   height: 127px;
+  background-size: cover;
+  background-image: url(images/illustration\ 1-\ about\ me-mobile@2x.png);
+  background-repeat: no-repeat;
 }
 
 .about-myself {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-size: cover;
-  padding-left: 24px;
-  padding-right: 24px;
+  background-image: url(images/illustration\ 2-about\ me\ mobile@2x.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 70px 57px;
 }
 
 .about-me {
@@ -286,17 +291,16 @@ a:visited {
   margin-bottom: 5px;
 }
 
+.large-text-container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .large-text-2 {
   color: #42526e;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
-}
-
-#paper-bird-2 {
-  position: absolute;
-  left: 0;
-  height: 56.25px;
 }
 
 .get-container {
