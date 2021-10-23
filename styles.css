@@ -256,11 +256,20 @@ a:visited {
   opacity: 70%;
 }
 
+#paper-bird-1 {
+  position: absolute;
+  right: 0;
+  width: 68px;
+  height: 127px;
+}
+
 .about-myself {
   display: flex;
   flex-direction: column;
   text-align: center;
   background-size: cover;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .about-me {
@@ -274,7 +283,14 @@ a:visited {
   color: #42526e;
   font-weight: 400;
   font-size: 20px;
+  line-height: 32px;
   gap: 12px;
+}
+
+#paper-bird-2 {
+  position: absolute;
+  left: 0;
+  height: 56.25px;
 }
 
 .get-container {
@@ -330,7 +346,6 @@ a:visited {
 #frameworks-img {
   width: 48px;
   height: 48px;
-
 }
 
 #skills-img {
