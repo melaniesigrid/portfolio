@@ -46,7 +46,7 @@ a:active {
   background-color: white;
 }
 
-.hamburger-container>nav {
+.hamburger-container > nav {
   display: none;
 }
 
@@ -89,7 +89,7 @@ a:active {
   padding: 0;
 }
 
-.social-links>a,
+.social-links > a,
 a:link,
 a:visited {
   color: #505f79;
@@ -351,7 +351,6 @@ a:visited {
 #skills-img {
   width: 48px;
   height: 48px;
-
 }
 
 .skill-title {
