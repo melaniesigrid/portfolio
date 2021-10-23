@@ -27,6 +27,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to my reviewers and coding partners at Microverse.
+- Special mention to my reviewer Fernando. 💫 Couldn't have done this without your help!
 
 ## 📝 License
 
