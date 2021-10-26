@@ -430,7 +430,7 @@ input[name="email-address"] {
 }
 
 input:placeholder-shown {
-  font: Inter;
+  font-family: 'Inter', sans-serif;
   color: #6b778c;
   font-size: 15px;
   line-height: 24px;
@@ -439,7 +439,7 @@ input:placeholder-shown {
 
 textarea {
   color: #091e42;
-  font: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 15px;
@@ -447,12 +447,11 @@ textarea {
   border-radius: 4px;
   width: 340px;
   height: 114px;
-
 }
 
 textarea::placeholder {
   color: #091e42;
-  font: Inter;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 15px;
