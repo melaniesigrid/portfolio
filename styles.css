@@ -402,11 +402,26 @@ a:visited {
   margin: 12px;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-text {
+  color: #172b4d;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
 .contact-form {
   display: flex;
   justify-content: center;
 }
 
-.contact-form ul {
-  
+input[name="name"], input[name="email-address"] {
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
 }
