@@ -425,3 +425,26 @@ input[name="name"], input[name="email-address"] {
   border: 1px solid #d0d9d4;
   border-radius: 4px;
 }
+
+textarea{
+  border: 1px solid #60c095;
+  border-radius: 4px;
+}
+
+.contact-form ul li {
+  padding: 0.4rem
+}
+
+.submit{
+  color:white;
+  border-radius: 4px;
+  background: #36b37f;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 12px;
+  margin-bottom: 2rem;
+}
