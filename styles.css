@@ -401,3 +401,12 @@ a:visited {
 .skill-text {
   margin: 12px;
 }
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form ul {
+  
+}
