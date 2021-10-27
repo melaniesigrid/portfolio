@@ -423,8 +423,6 @@ a:visited {
 
 input[name="name"],
 input[name="email-address"] {
-  border: 1px solid #d0d9d4;
-  border-radius: 4px;
   width: 327px;
   height: 48px;
 }
@@ -434,7 +432,25 @@ input:placeholder-shown {
   color: #6b778c;
   font-size: 15px;
   line-height: 24px;
+}
+
+input {
+  color: #091e42;
+  font-family: 'Inter',
+  sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
   padding-left: 16px;
+}
+
+.form-input {
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: 1px solid #60c095;
 }
 
 textarea {
@@ -443,23 +459,40 @@ textarea {
   font-size: 15px;
   font-weight: 400;
   line-height: 15px;
-  border: 1px solid #60c095;
-  border-radius: 4px;
-  width: 340px;
-  height: 114px;
+  width: 315px;
+  height: 102px;
+  padding: 12px;
 }
 
 textarea::placeholder {
-  color: #091e42;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 15px;
-  padding: 12px;
+
+}
+
+textarea:focus {
+  outline: 1px solid #60c095;
 }
 
 .contact-form ul li {
   padding: 0.7rem;
+}
+
+.comment {
+  padding-bottom: 0;
+}
+
+.contact-illustration {
+  position: absolute;
+  padding-top: 0;
+  right: 0;
+  width: 60px;
+  height: 154px;
+  background-size: cover;
+  background-image: url(images/illustration-contact-form.png);
+  background-repeat: no-repeat;
 }
 
 .submit {
@@ -483,6 +516,7 @@ textarea::placeholder {
 footer {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .my-email {
@@ -490,4 +524,10 @@ footer {
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
+}
+
+.rounded-footer {
+  border-top: 8px solid #0d151e;
+  border-radius: 5px;
+  width: 40%;
 }
