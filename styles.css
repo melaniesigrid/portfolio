@@ -423,8 +423,7 @@ a:visited {
 
 input {
   color: #091e42;
-  font-family: 'Inter',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 15px;
@@ -437,8 +436,7 @@ input[name="email-address"] {
   height: 48px;
 }
 
-input:
-placeholder-shown {
+input:placeholder-shown {
   font-family: 'Inter', sans-serif;
   color: #6b778c;
   font-size: 15px;
