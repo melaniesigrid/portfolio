@@ -421,27 +421,28 @@ a:visited {
   justify-content: center;
 }
 
+input {
+  color: #091e42;
+  font-family: 'Inter',
+    sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15px;
+  padding-left: 16px;
+}
+
 input[name="name"],
 input[name="email-address"] {
   width: 327px;
   height: 48px;
 }
 
-input:placeholder-shown {
+input:
+placeholder-shown {
   font-family: 'Inter', sans-serif;
   color: #6b778c;
   font-size: 15px;
   line-height: 24px;
-}
-
-input {
-  color: #091e42;
-  font-family: 'Inter',
-  sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 15px;
-  padding-left: 16px;
 }
 
 .form-input {
@@ -469,7 +470,6 @@ textarea::placeholder {
   font-size: 15px;
   font-weight: 400;
   line-height: 15px;
-
 }
 
 textarea:focus {
