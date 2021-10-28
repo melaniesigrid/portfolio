@@ -541,6 +541,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    transition: height 4s;
   }
 
   .navlink {
@@ -572,6 +573,7 @@ footer {
     background-position-x: center;
     background-position-y: top;
     padding: 300px 0;
+    transition: background 3s;
   }
 
   .card-container {
