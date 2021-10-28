@@ -66,50 +66,6 @@ ul {
   padding: 114px 24px;
 }
 
-@media (min-width: 600px) {
-
-  header {
-    position: absolute;
-  }
-
-  .welcome-text {
-  display: none;
-  }
-
-  .navbar {
-    position: absolute;
-    top: 0;
-    background:transparent;
-  }
-
-  .hamburger-container > nav {
-    color: #28352f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  .desktop-menu {
-    display: block;
-  }
-
-  .rounded {
-    display: none;
-  }
-  .presentation {
-    background-image: url(images/header-illustration-desktop.png);
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: top;
-    padding: 300px 0;
-}
-}
-
-
 .presentation-text {
   max-width: 920px;
   margin: 0 auto;
@@ -565,4 +521,62 @@ footer {
   border-top: 8px solid #0d151e;
   border-radius: 5px;
   width: 40%;
+}
+
+@media (min-width: 600px) {
+
+  header {
+    position: absolute;
+  }
+
+  .welcome-text {
+    display: none;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navlink {
+    display: flex;
+  }
+
+  .hamburger-container>nav {
+    color: #28352f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: block;
+  }
+
+  .rounded {
+    display: none;
+  }
+
+  .presentation {
+    background-image: url(images/header-illustration-desktop.png);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    padding: 300px 0;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 }
