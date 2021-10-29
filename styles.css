@@ -352,6 +352,8 @@ a:visited {
   width: 80px;
   height: 80px;
   margin-top: 40px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2),
+  0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #language-img {
@@ -537,6 +539,10 @@ footer {
 
   header {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .welcome-text {
@@ -556,6 +562,13 @@ footer {
 
   .navlink {
     display: flex;
+    justify-content: center;
+  }
+
+  .hamburger-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
   }
 
   .hamburger-container > nav {
@@ -563,6 +576,10 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .navbar {
+    justify-content: space-evenly;
   }
 
   .hamburger {
@@ -586,7 +603,7 @@ footer {
     transition: background 3s;
   }
 
-  .works {
+  .portfolio {
     margin-left: 135px;
     margin-right: 134px;
   }
@@ -613,16 +630,20 @@ footer {
   }
 
   .contact {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
 
   .contact-text-container {
     max-width: 463px;
     float: left;
   }
-  
 
+  .contact-form {
+    display: grid;
+  }
+  
+}
 @media (max-width: 480px) {
   .card-grid {
     display: grid;
