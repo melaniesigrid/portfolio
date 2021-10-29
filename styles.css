@@ -541,7 +541,6 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: height 4s;
   }
 
   .navlink {
@@ -581,4 +580,12 @@ footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
+
+  .social-links {
+    transition: font-size 0.2s;
+    }
+    
+    .social-links:hover {
+    font-size: 2.5rem;
+    }
 }
