@@ -43,6 +43,10 @@ ul {
   padding: 10px 24px;
 }
 
+.navlink {
+  display: none;
+}
+
 .hamburger {
   color: #28352f;
   font-size: 25px;
@@ -52,16 +56,19 @@ ul {
   background-color: white;
 }
 
-.hamburger-container > nav {
-  display: none;
-}
-
 .presentation {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  gap: 24px;
   background-image: url(images/header-illustration-mobile@2x.png);
   background-size: cover;
-  padding: 64px 24px;
+  padding: 114px 24px;
+}
+
+.presentation-text {
+  max-width: 920px;
+  margin: 0 auto;
 }
 
 .title {
@@ -108,20 +115,6 @@ a:visited {
 
 .desktop-menu {
   display: none;
-}
-
-@media (min-width: 600px) {
-  .hamburger-container {
-    display: none;
-  }
-
-  .desktop-menu {
-    display: block;
-  }
-
-  .rounded {
-    display: none;
-  }
 }
 
 .chevron-container {
@@ -214,19 +207,19 @@ a:visited {
   height: 32px;
 }
 
-#ruby {
+.ruby {
   width: 103px;
 }
 
-#css {
+.css {
   width: 45px;
 }
 
-#js {
+.js {
   width: 82px;
 }
 
-#html {
+.html {
   width: 51px;
 }
 
@@ -528,4 +521,70 @@ footer {
   border-top: 8px solid #0d151e;
   border-radius: 5px;
   width: 40%;
+}
+
+@media (min-width: 600px) {
+  header {
+    position: absolute;
+  }
+
+  .welcome-text {
+    display: none;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navlink {
+    display: flex;
+  }
+
+  .hamburger-container > nav {
+    color: #28352f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: block;
+  }
+
+  .rounded {
+    display: none;
+  }
+
+  .presentation {
+    background-image: url(images/header-illustration-desktop.png);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    padding: 300px 0;
+    transition: background 3s;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .social-links {
+    transition: font-size 0.2s;
+  }
+
+  .social-links:hover {
+    font-size: 2.5rem;
+  }
 }
