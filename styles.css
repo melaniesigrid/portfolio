@@ -671,8 +671,53 @@ footer {
     width: 47.5vw;
   }
 
+  .contact-illustration {
+    display: none;
+  }
+
   .submit-container {
     margin-right: auto;
+  }
+
+  /* position: absolute;
+  right: 0;
+  width: 68px;
+  height: 127px;
+  background-size: cover;
+  background-image: url(images/illustration\ 1-\ about\ me-mobile@2x.png);
+  background-repeat: no-repeat; */
+
+  .contact-image-1 {
+  position: absolute;
+  left: 0;
+  width: 193.5px;
+  height: 351.75px;
+  z-index: -1;
+  margin-top: 75px;
+  background-image: url(images/illustration-1-contact-form-desktop@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+  .contact-image-2 {
+  position: absolute;
+  width: 130.5px;
+  height: 106px;
+  z-index: -1;
+  background-image: url(images/illustration-2-contact-form-desktop@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+  .contact-image-3 {
+  position: absolute;
+  right: 0;
+  width: 221.75px;
+  height: 493px;
+  z-index: -1;
+  background-image: url(images/contact-form-illustratoin-3-desktop@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   }
 
   .final-separator {
