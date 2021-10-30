@@ -583,8 +583,8 @@ footer {
   .social-links {
     transition: font-size 0.2s;
   }
-    
-    .social-links:hover {
+  
+  .social-links:hover {
     font-size: 2.5rem;
   }
 }
