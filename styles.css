@@ -435,8 +435,8 @@ input {
   padding-left: 16px;
 }
 
-input[name="name"],
-input[name="email-address"] {
+.name,
+.email-address {
   width: 327px;
   height: 48px;
 }
@@ -522,6 +522,10 @@ footer {
   text-align: center;
 }
 
+.final-separator {
+  display: none;
+}
+
 .my-email {
   color: #42526e;
   font-size: 20px;
@@ -543,6 +547,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100vw;
   }
 
   .welcome-text {
@@ -550,8 +555,6 @@ footer {
   }
 
   .navbar {
-    position: absolute;
-    top: 0;
     background: transparent;
     display: flex;
     justify-content: center;
@@ -563,6 +566,15 @@ footer {
   .navlink {
     display: flex;
     justify-content: center;
+    color: #344563;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 10px 12px;
+  }
+
+  .navlink:hover {
+    opacity: 70%;
   }
 
   .hamburger-container {
@@ -640,7 +652,52 @@ footer {
   }
 
   .contact-form {
-    display: grid;
+    display: grid;  
+  }
+
+  .contact-text-container {
+    width: 463px;
+    height: 256px;
+    padding-top: 50px;
+    padding-left: 75px;
+  }
+
+  .contact-text {
+      padding: 0;
+      margin: 0;
+  }
+
+  .form-input {
+    width: 47.5vw;
+  }
+
+  .submit-container {
+    margin-right: auto;
+  }
+
+  .final-separator {
+    display: block;
+    height: 1px;
+    width: 100vw;
+    border: none;
+    background-color: #dfe1e6;
+  }
+
+  .footer-social {
+    font-size: 1.7rem;
+    margin: 10px 0;
+  }
+
+  .my-email {
+    display: none;
+  }
+
+  .final-space {
+    display: none;
+  }
+
+  .rounded-footer {
+    display: none;
   }
   
 }
