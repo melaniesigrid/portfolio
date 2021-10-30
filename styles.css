@@ -103,7 +103,7 @@ ul {
   padding: 0;
 }
 
-.social-links>a,
+.social-links > a,
 a:link,
 a:visited {
   color: #505f79;
@@ -207,19 +207,19 @@ a:visited {
   height: 32px;
 }
 
-#ruby {
+.ruby {
   width: 103px;
 }
 
-#css {
+.css {
   width: 45px;
 }
 
-#js {
+.js {
   width: 82px;
 }
 
-#html {
+.html {
   width: 51px;
 }
 
@@ -524,7 +524,6 @@ footer {
 }
 
 @media (min-width: 600px) {
-
   header {
     position: absolute;
   }
@@ -547,7 +546,7 @@ footer {
     display: flex;
   }
 
-  .hamburger-container>nav {
+  .hamburger-container > nav {
     color: #28352f;
     display: flex;
     justify-content: center;
@@ -583,9 +582,9 @@ footer {
 
   .social-links {
     transition: font-size 0.2s;
-    }
+  }
     
     .social-links:hover {
     font-size: 2.5rem;
-    }
+  }
 }
