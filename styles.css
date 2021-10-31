@@ -560,7 +560,6 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: height 4s;
   }
 
   .navlink {
@@ -571,14 +570,16 @@ footer {
     font-weight: 600;
     line-height: 20px;
     padding: 10px 12px;
+    transition: font-size 0.4s;
+  }
+
+  .navlink:hover {
+    font-size: 18px;
+    opacity: 70%;
   }
 
   .portfolio-nav {
     padding-left: 0;
-  }
-
-  .navlink:hover {
-    opacity: 70%;
   }
 
   .hamburger-container {
@@ -764,11 +765,4 @@ footer {
   .rounded-footer {
     display: none;
   } 
-}
-
-@media (max-width: 480px) {
-  .card-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
