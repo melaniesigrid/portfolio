@@ -540,7 +540,7 @@ footer {
   width: 40%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 1000px) {
   header {
     position: absolute;
     display: flex;
