@@ -26,9 +26,9 @@
     <div class="hamburger-container">
       <button class="hamburger" type="button">≡</button>
       <nav class="navbar">
-        <a href="Portfolio" class="navlink">Portfolio</a>
-        <a href="About" class="navlink">About</a>
-        <a href="Contact" class="navlink">Contact</a>
+        <a href="#portfolio" class="navlink portfolio-nav">Portfolio</a>
+        <a href="#about" class="navlink">About</a>
+        <a href="#contact" class="navlink">Contact</a>
       </nav>
     </div>
   </header>
@@ -53,15 +53,17 @@
           </a>
         </div>
       </section>
-      <section class="works" id="works">
+      <section class="works" id="portfolio">
         <br>
-        <h2 class="works-title">My Recent Works</h2>
+        <div class="works-title-container">
+          <h2 class="works-title">My Recent Works</h2>
+        </div>
         <div class="separator">
           <hr class="rounded">
         </div>
         <br>
         <br>
-        <div class="card-container">
+        <div class="card-container card-grid">
           <div class="card">
             <div class="cardlet">
               <h3 class="project-title">Multi-Post Stories<br>Gain+Glory</h3>
@@ -85,7 +87,6 @@
                 </div>
             </div>
           </div>
-          <br>
           <div class="card">
             <div class="cardlet">
               <h3 class="project-title">Multi-Post Stories<br>Gain+Glory</h3>
@@ -109,7 +110,6 @@
               </div>
             </div>
           </div>
-          <br>
           <div class="card">
             <div class="cardlet">
               <h3 class="project-title">Multi-Post Stories<br>Gain+Glory</h3>
@@ -132,8 +132,7 @@
                 <a class="see-project">See Project</a>
               </div>
             </div>
-          </div>
-          <br>      
+          </div>      
           <div class="card">
             <div class="cardlet">
               <h3 class="project-title">Multi-Post Stories<br>Gain+Glory</h3>
@@ -156,8 +155,7 @@
                 <a class="see-project">See Project</a>
               </div>
             </div>
-          </div>
-          <br>   
+          </div>   
           <div class="card">
             <div class="cardlet">
               <h3 class="project-title">Multi-Post Stories<br>Gain+Glory</h3>
@@ -180,8 +178,7 @@
                 <a class="see-project">See Project</a>
               </div>
             </div>
-          </div>
-          <br>        
+          </div>        
           <div class="card">
             <div class="cardlet">
               <h3 class="project-title">Multi-Post Stories<br>Gain+Glory</h3>
@@ -212,11 +209,10 @@
       <div class="paper-bird"></div>
       <br>
       <br>
-      <section class="about-myself">
+      <section class="about-myself" id="about">
         <h2 class="about-me">About me</h2>
         <div class="large-text-container">
-          <p class="large-text-2"> I can help you build a product,<br> feature or website. Look through<br> some of my work and experience! If<br> you like what you see and have a<br> project you need coded,<br> 
-don’t hesitate to contact me.</p>
+          <p class="large-text-2"> I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
         </div>
         <div class="get-container">
           <a class="get-resume">Get My Resume</a>
@@ -225,7 +221,7 @@ don’t hesitate to contact me.</p>
       <br>
       <br>
       <section class="skills">
-        <div class="card-container">
+        <div class="card-container skill-card-container">
           <div class="skill-card">
             <div class="icon-container"><img src="images/languages-icon.png" id="language-img" alt="languages icon"></div>
             <br>
@@ -304,31 +300,39 @@ don’t hesitate to contact me.</p>
       </section>
       <br>
       <br>
-      <section class="contact">
-        <h3 class="contact-text">I'm always<br>interested in<br>hearing about<br>new projects, so<br>if you'd like to<br>chat please get<br>in touch.</h3>
+      <section class="contact" id="contact">
+        <div class="contact-text-container">
+          <h3 class="contact-text">I'm always interested in hearing about new projects, so if you'd like to chat, please get in touch.</h3>
+        </div>
         <form class="contact-form" action="https://formspree.io/f/xwkajzob" method="POST">
           <ul>
             <li>
-              <input type="text" name="name" class="form-input" placeholder="Full name" maxlength="30" required>
+              <div class="contact-image-3"></div>
             </li>
             <li>
-              <input type="email" name="email-address" class="form-input" placeholder="Email address" required>                           
+              <input type="text" name="name" class="form-input name" placeholder="Full name" maxlength="30" required>
+            </li>
+            <li>
+              <input type="email" name="email-address" class="form-input email-address" placeholder="Email address" required>                           
             </li>
             <li class="comment">    
               <textarea name="comment" maxlength="500" class="form-input" placeholder="Enter text here" required></textarea>
             </li>
-            <li>
+            <li class="img-element">
               <div class="contact-illustration"></div>
             </li>
-            <li> 
+            <li class="submit-container"> 
               <input class="submit" type="submit" name="submit" value="Get in touch">
             </li>  
           </ul>     
         </form>
+        <div class="contact-image-1"></div>
+        <div class="contact-image-2"></div>
       </section>
   </main>
   <footer>
-    <ul class="social-links">
+    <hr class="final-separator">
+    <ul class="social-links footer-social">
       <li><a class="yes-style" href="https://twitter.com/SiriMoon11"><i class="fab fa-twitter"></i></a></li>
       <li><a class="yes-style" href="https://www.linkedin.com/in/melanie-arellano-92aaa9194/"><i class="fab fa-linkedin-in"></i></a></li>
       <li><a class="yes-style" href="#"><i class="fab fa-medium-m"></i></a></li>
@@ -336,12 +340,12 @@ don’t hesitate to contact me.</p>
       <li><a class="yes-style" href="#"><i class="fab fa-angellist"></i></a></li>
     </ul>
     <p class="my-email">melaniesigrid@protonmail.com</p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <br class="final-space">
+    <br class="final-space">
+    <br class="final-space">
+    <br class="final-space">
+    <br class="final-space">
+    <br class="final-space">
     <div class="separator"><hr class="rounded-footer"></div>
   </footer>
 </body>
