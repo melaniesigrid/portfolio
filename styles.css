@@ -618,11 +618,11 @@ footer {
     transition: background 3s;
   }
 
-  .social-links {
+  .yes-style {
     transition: font-size 0.2s;
   }
 
-  .social-links:hover {
+  .yes-style:hover {
     font-size: 2.5rem;
   }
 
