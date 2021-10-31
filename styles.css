@@ -214,19 +214,19 @@ a:visited {
   height: 32px;
 }
 
-#ruby {
+.ruby {
   width: 103px;
 }
 
-#css {
+.css {
   width: 45px;
 }
 
-#js {
+.js {
   width: 82px;
 }
 
-#html {
+.html {
   width: 51px;
 }
 
@@ -581,7 +581,7 @@ footer {
   .portfolio-nav {
     padding-left: 0;
   }
-
+  
   .hamburger-container {
     display: flex;
     justify-content: center;
@@ -765,4 +765,12 @@ footer {
   .rounded-footer {
     display: none;
   } 
+  
+  .social-links {
+    transition: font-size 0.2s;
+  }
+
+  .social-links:hover {
+    font-size: 2.5rem;
+  }
 }
