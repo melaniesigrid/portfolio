@@ -352,8 +352,9 @@ a:visited {
   width: 80px;
   height: 80px;
   margin-top: 40px;
-  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2),
-  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow:
+    0 4px 6px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #language-img {
@@ -581,7 +582,7 @@ footer {
   .portfolio-nav {
     padding-left: 0;
   }
-  
+
   .hamburger-container {
     display: flex;
     justify-content: center;
@@ -592,10 +593,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .navbar {
-    text-align: center;
   }
 
   .hamburger {
@@ -662,27 +659,21 @@ footer {
     max-width: 463px;
     float: right;
     text-align: justify;
-  }
-
-  .contact-form {
-    display: grid;  
-  }
-
-  .contact-text-container {
     width: 463px;
     height: 256px;
     padding-top: 50px;
     padding-left: 225px;
   }
 
+  .contact-form {
+    display: grid;
+    padding-left: 0;
+  }
+
   .contact-text {
     padding: 0;
     margin: 0;
     font-size: 30px;
-  }
-
-  .contact-form {
-    padding-left: 0;
   }
 
   .form-input {
@@ -764,8 +755,8 @@ footer {
 
   .rounded-footer {
     display: none;
-  } 
-  
+  }
+
   .social-links {
     transition: font-size 0.2s;
   }
