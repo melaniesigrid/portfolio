@@ -2,7 +2,8 @@
 
 # Portfolio
 
-> A portfolio to showcase my work. 
+> A portfolio to showcase my work. Check it out at:
+https://melaniesigrid.github.io/portfolio/
 
 ![screenshot](images/app_screenshot.png)
 
