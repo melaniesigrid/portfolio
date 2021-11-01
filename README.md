@@ -3,6 +3,8 @@
 # Portfolio
 
 > A portfolio to showcase my work. 
+> [My Portfolio](https://melaniesigrid.github.io/portfolio/)
+
 
 ![screenshot](images/app_screenshot.png)
 
