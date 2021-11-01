@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> A portfolio to showcase my work.
+> A portfolio to showcase my work. 
 
 ![screenshot](images/app_screenshot.png)
 
