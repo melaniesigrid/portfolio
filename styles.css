@@ -54,14 +54,13 @@ ul {
 }
 
 .navlink {
-  /* display: none; */
+  display: none;
 }
 
 .hamburger {
   color: #28352f;
   font-size: 2rem;
   margin-left: auto;
-  margin-top: 25px;
   cursor: pointer;
   border: 0; 
   background-color: white;
