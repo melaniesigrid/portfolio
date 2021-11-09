@@ -1,16 +1,14 @@
-/*const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.mainMenu');
+const openMenu = document.querySelector('.openMenu');
 
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
-})*/
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
 
-function toggleMenu() {
-  if (document.getElementsById('mainmenu').style.display == 'block') {
-    document.getElementById('mainmenu').style.display = 'none';
-    document.getElementById('hamburger').style.color = 'white';
-  } else {
-    document.getElementById('mainmenu').style.display = 'block';
-  }
+function show() {
+  mainMenu.style.display = 'flex';
+  mainMenu.style.top = '0';
 }
-document.getElementById('hamburger').addEventListener('click', toggleMenu);
+function close() {
+  mainMenu.style.top = '-100%';
+}
