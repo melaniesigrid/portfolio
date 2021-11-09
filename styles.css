@@ -54,15 +54,16 @@ font-size: 18px;
 opacity: 70%;
 }
 
-nav.openMenu {
+nav .openMenu {
   font-size: 2rem;
   margin: 20px;
   display: none;
   cursor: pointer;
+  right: 40px;
 }
 
-nav.mainMenu .closeMenu , .icons i {
-  font-size: 2rem;
+nav .mainMenu .closeMenu , .icons i {
+  font-size: 1rem;
   display: none;
   cursor: pointer;
 }
@@ -71,6 +72,7 @@ nav .logo {
   color: #28352f;
   font-size: 20px;
   cursor: pointer;
+  margin-left: 40px;
 }
 
 @media(max-width: 1000px) {
@@ -101,8 +103,9 @@ nav .logo {
   nav .closeMenu {
     display: none;
   }
-  nav.mainMenu li a:hover {
-    font-size: 1.6rem;
+  nav .mainMenu li a:hover {
+    font-size: 1.3rem;
+    opacity: 70%;
   }
 }
 
