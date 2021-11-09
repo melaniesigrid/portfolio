@@ -43,7 +43,7 @@ nav .mainMenu {
   display: flex;
 }
 
-.social-links>a,
+.social-links > a,
 a:link,
 a:visited {
   color: #505f79;
@@ -68,8 +68,8 @@ nav .openMenu {
   right: 40px;
 }
 
-nav .mainMenu .closeMenu ,
-  .icons i {
+nav .mainMenu .closeMenu,
+.icons i {
   font-size: 1rem;
   display: none;
   cursor: pointer;
@@ -99,19 +99,19 @@ nav .logo {
     display: none;
   }
 
+  nav .closeMenu {
+    display: none;
+  }
+
   nav .mainMenu .closeMenu {
     display: block;
     position: absolute;
     top: 20px;
-    right: 20px;  
+    right: 20px;
   }
 
   nav .openMenu {
     display: block;
-  }
-
-  nav .closeMenu {
-    display: none;
   }
 
   nav .mainMenu li a:hover {
