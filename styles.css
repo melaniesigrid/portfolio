@@ -40,7 +40,13 @@ nav {
 }
 
 nav .mainMenu {
-  display: flex; 
+  display: flex;
+}
+
+.social-links>a,
+a:link,
+a:visited {
+  color: #505f79;
 }
 
 nav .mainMenu li a {
@@ -50,8 +56,8 @@ nav .mainMenu li a {
 }
 
 nav.mainMenu li a:hover {
-font-size: 18px;
-opacity: 70%;
+  font-size: 18px;
+  opacity: 70%;
 }
 
 nav .openMenu {
@@ -62,7 +68,8 @@ nav .openMenu {
   right: 40px;
 }
 
-nav .mainMenu .closeMenu , .icons i {
+nav .mainMenu .closeMenu ,
+  .icons i {
   font-size: 1rem;
   display: none;
   cursor: pointer;
@@ -75,7 +82,7 @@ nav .logo {
   margin-left: 40px;
 }
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
   nav .mainMenu {
     height: 100vh;
     background-color: white;
@@ -91,18 +98,22 @@ nav .logo {
     transition: top 1s ease;
     display: none;
   }
+
   nav .mainMenu .closeMenu {
     display: block;
     position: absolute;
     top: 20px;
     right: 20px;  
   }
+
   nav .openMenu {
     display: block;
   }
+
   nav .closeMenu {
     display: none;
   }
+
   nav .mainMenu li a:hover {
     font-size: 1.3rem;
     opacity: 70%;
@@ -121,7 +132,6 @@ nav .logo {
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  /* flex-direction: row; */
   align-items: center;
   align-items: flex-start;
   max-height: 45px;
@@ -143,7 +153,7 @@ nav .logo {
   font-size: 2rem;
   margin-left: auto;
   cursor: pointer;
-  border: 0; 
+  border: 0;
   background-color: white;
 }
 
@@ -192,12 +202,6 @@ nav .logo {
   font-size: 2rem;
   list-style-type: none;
   padding: 0;
-}
-
-.social-links > a,
-a:link,
-a:visited {
-  color: #505f79;
 }
 
 .yes-style:hover {
