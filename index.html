@@ -25,23 +25,20 @@
 
     gtag('config', 'G-RJ3ZC384G3');
   </script>
-
   <title>Melanie's Portfolio</title>
-
 </head>
 
 <body>
-  <header>
-    <h4 class="welcome-text">Welcome</h4>
-    <div class="hamburger-container">
-      <button class="hamburger" type="button">≡</button>
-      <nav class="navbar">
-        <a href="#portfolio" class="navlink portfolio-nav">Portfolio</a>
-        <a href="#about" class="navlink">About</a>
-        <a href="#contact" class="navlink">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <nav>
+    <div class="logo"><h4 class="welcome-text">Welcome</h4></div>
+    <div class="openMenu hamburger-container"><a class="hamburger">≡</a></div>
+    <ul class="mainMenu navbar-links" id="mainmenu">
+          <li><a href="#portfolio" class="navlink portfolio-nav">Portfolio</a></li>
+          <li><a href="#about" class="navlink">About</a></li>
+          <li><a href="#contact" class="navlink">Contact</a></li>
+          <li><div class="closeMenu"><i class="fas fa-times icons"></i></div></li>
+    </ul>
+  </nav>
   <main>
       <section class="presentation">
         <h1 class="title presentation-text">Hey there. I’m Melanie.</h1>
@@ -358,5 +355,7 @@
     <br class="final-space">
     <div class="separator"><hr class="rounded-footer"></div>
   </footer>
+  <!--JavaScript file-->
+  <script src="main.js"></script>
 </body>
 </html>

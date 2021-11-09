@@ -33,14 +33,115 @@ ul {
   padding: 0;
 }
 
+nav {
+  color: #28352f;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .mainMenu {
+  display: flex;
+}
+
+.social-links > a,
+a:link,
+a:visited {
+  color: #505f79;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  color: #28352f;
+}
+
+nav.mainMenu li a:hover {
+  font-size: 18px;
+  opacity: 70%;
+}
+
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+  right: 40px;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 1rem;
+  display: none;
+  cursor: pointer;
+}
+
+nav .logo {
+  color: #28352f;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+@media (max-width: 1000px) {
+  nav .mainMenu {
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  nav .closeMenu {
+    display: none;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .openMenu {
+    display: block;
+  }
+
+  nav .mainMenu li a:hover {
+    font-size: 1.3rem;
+    opacity: 70%;
+  }
+}
+
+.hamburger-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
 .navbar {
   color: #28352f;
   font-weight: 600;
   font-size: 20px;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  align-items: flex-start;
   max-height: 45px;
   padding: 10px 24px;
+  width: 100vh;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
 }
 
 .navlink {
@@ -49,7 +150,7 @@ ul {
 
 .hamburger {
   color: #28352f;
-  font-size: 25px;
+  font-size: 2rem;
   margin-left: auto;
   cursor: pointer;
   border: 0;
@@ -101,12 +202,6 @@ ul {
   font-size: 2rem;
   list-style-type: none;
   padding: 0;
-}
-
-.social-links > a,
-a:link,
-a:visited {
-  color: #505f79;
 }
 
 .yes-style:hover {
@@ -564,6 +659,10 @@ footer {
     margin-top: 25px;
   }
 
+  #mainmenu {
+    display: flex;
+  }
+
   .navlink {
     display: flex;
     justify-content: center;
@@ -601,7 +700,8 @@ footer {
   }
 
   .desktop-menu {
-    display: block;
+    display: flex;
+    flex-direction: row;
   }
 
   .rounded {
