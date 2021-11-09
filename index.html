@@ -27,22 +27,17 @@
   </script>
 
   <title>Melanie's Portfolio</title>
-  
-  <!--JavaScript file-->
-  <script src="javascript.js" defer></script>
-
 </head>
 
 <body>
   <header>
       <nav class="navbar">
         <h4 class="welcome-text">Welcome</h4>
-        <div class="hamburger-container"></div>
-        <a href="#" class="toggle-button"></a>
-          <button class="hamburger" type="button">≡</button>
-        </a>
+        <div class="hamburger-container">
+          <button class="hamburger" type="button" onclick="toggleMenu()">≡</button>
+        </div>
         <div class="navbar-links">
-          <ul>
+          <ul id="mainmenu">
             <li><a href="#portfolio" class="navlink portfolio-nav">Portfolio</a></li>
             <li><a href="#about" class="navlink">About</a></li>
             <li><a href="#contact" class="navlink">Contact</a></li>
@@ -368,4 +363,6 @@
     <div class="separator"><hr class="rounded-footer"></div>
   </footer>
 </body>
+<!--JavaScript file-->
+<script src="main.js"></script>
 </html>

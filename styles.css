@@ -36,7 +36,7 @@ ul {
 .hamburger-container {
   display: flex;
   align-items: flex-start;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .navbar {
@@ -45,12 +45,18 @@ ul {
   font-size: 20px;
   display: flex;
   flex-direction: column;
+  /* flex-direction: row; */
   align-items: center;
   align-items: flex-start;
   max-height: 45px;
   padding: 10px 24px;
   width: 100vh;
   
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
 }
 
 .navlink {
@@ -574,6 +580,10 @@ footer {
     margin-top: 25px;
   }
 
+  #mainmenu {
+    display: flex;
+  }
+
   .navlink {
     display: flex;
     justify-content: center;
@@ -611,7 +621,8 @@ footer {
   }
 
   .desktop-menu {
-    display: block;
+    display: flex;
+    flex-direction: row;
   }
 
   .rounded {
