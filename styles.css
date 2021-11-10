@@ -365,9 +365,10 @@ nav .logo {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  background-color: #ffffff;
-  border: 1px solid #ebecf0;
-  border-radius: 8px;
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 16px;
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
   transition: 200ms ease-in-out;
   z-index: 10;
