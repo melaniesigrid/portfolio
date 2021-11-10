@@ -45,3 +45,8 @@ function openModal(modal) {
   overlay.classList.add('active');
 }
 
+function closeModal(modal) {
+  if (modal == null) return;
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
+  }
