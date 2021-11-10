@@ -1,4 +1,3 @@
-//Hamburger menu open-close
 const mainMenu = document.querySelector('.mainMenu');
 const closeMenu = document.querySelector('.mainMenu');
 const openMenu = document.querySelector('.openMenu');
@@ -15,7 +14,6 @@ function close() {
 openMenu.addEventListener('click', show);
 closeMenu.addEventListener('click', close);
 
-//See-Project modals
 const openModalButtons = document.querySelectorAll('[data-modal-target]')
 const closeModalButtons = document.querySelectorAll('[data-close-button]')
 const overlay = document.getElementById('overlay')
