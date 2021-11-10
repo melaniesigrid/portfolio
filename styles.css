@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   scroll-behavior: smooth;
   transition-duration: 0.2s;
 }
@@ -356,6 +358,68 @@ nav .logo {
 
 .see-project:hover {
   opacity: 70%;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: #ffffff;
+  border: 1px solid #ebecf0;
+  border-radius: 8px;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  width: 920px;
+  max-width: 80%;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(193, 199, 208, 0.7);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .paper-bird {
