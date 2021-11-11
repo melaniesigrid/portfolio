@@ -51,18 +51,19 @@ closeModalButtons.forEach((button) => {
   });
 });
 
-const form = document.getElementById('contact-form');
-const email = form.elements['email-address'];
-let emailAddress = email.value;
-const error = document.querySelector('.email-error')
-const regExp = '/^[a-z0-9_-]+@[a-z0-9]+\.[a-z]+\.?[a-z]+/g';
+const form = document.querySelector('.contact-form');
+const email = document.getElementById('email-valit');
+const error = document.querySelector('.email-error');
+const regExp = /^[a-z0-9_-]+@[a-z0-9]+\.[a-z]+\.?[a-z]+/g;
 
 form.addEventListener('submit', (event) => {
-  if (emailAddress != emailAddress.toLowerCase()) {
-    event.preventDefault();
-    error.innerHTML = 'Your email address must be lowercase.'
+  if (regExp.test(email.value)) {
+    error.innerHTML = 'Your email is good ';
   } else {
-    error.textContent = '';
-    form.submit;
+    event.preventDefault();
+    error.innerHTML = 'Your email  address must be lowercase.';
   }
 });
+
+
+
