@@ -1,4 +1,6 @@
-* {
+*,
+*::after,
+*::before {
   scroll-behavior: smooth;
   transition-duration: 0.2s;
 }
@@ -52,7 +54,10 @@ a:visited {
 nav .mainMenu li a {
   display: inline-block;
   padding: 15px;
-  color: #28352f;
+  color: #3a4a42;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
 }
 
 nav.mainMenu li a:hover {
@@ -70,7 +75,7 @@ nav .openMenu {
 
 nav .mainMenu .closeMenu,
 .icons i {
-  font-size: 1rem;
+  font-size: 1.3rem;
   display: none;
   cursor: pointer;
 }
@@ -356,6 +361,105 @@ nav .logo {
 
 .see-project:hover {
   opacity: 70%;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: #fff;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 16px;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  transition: 400ms ease-in-out;
+  z-index: 10;
+  width: 343px;
+  height: 836px;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image-desktop {
+  width: 311px;
+  height: 220px;
+  margin-top: 6px;
+}
+
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 2rem;
+  font-weight: bold;
+  position: absolute;
+  right: 27px;
+  top: 26px;
+  color: white;
+}
+
+.modal-title {
+  color: #172b4d;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 16px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.portfolio-language {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 16px;
+  margin-top: 0;
+}
+
+.modal-body {
+  padding: 0 15px;
+  color: #344563;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  height: 48px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(193, 199, 208, 0.7);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .paper-bird {
@@ -736,6 +840,25 @@ footer {
     max-width: 1171px;
     margin: 0 auto;
     gap: 24px;
+  }
+
+  .modal {
+    width: 920px;
+    height: 1000px;
+    max-width: 80%;
+    overflow: auto;
+  }
+
+  .project-image-desktop {
+    width: 872px;
+    height: 616px;
+    margin-top: 25px;
+  }
+
+  .modal-header .close-button {
+    right: 35px;
+    top: 40px;
+    color: white;
   }
 
   .about-myself {
