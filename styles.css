@@ -54,7 +54,10 @@ a:visited {
 nav .mainMenu li a {
   display: inline-block;
   padding: 15px;
-  color: #28352f;
+  color: #3a4a42;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
 }
 
 nav.mainMenu li a:hover {
@@ -72,7 +75,7 @@ nav .openMenu {
 
 nav .mainMenu .closeMenu,
 .icons i {
-  font-size: 1rem;
+  font-size: 1.3rem;
   display: none;
   cursor: pointer;
 }
@@ -370,10 +373,10 @@ nav .logo {
   box-sizing: border-box;
   border-radius: 16px;
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
-  transition: 200ms ease-in-out;
+  transition: 400ms ease-in-out;
   z-index: 10;
-  width: 920px;
-  max-width: 80%;
+  width: 343px;
+  height: 836px;
 }
 
 .modal.active {
@@ -384,13 +387,14 @@ nav .logo {
   padding: 10px 15px;
   display: flex;
   justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  border-bottom: 1px solid black;
 }
 
-.modal-header .title {
-  font-size: 1.25rem;
-  font-weight: bold;
+.project-image-desktop {
+  width: 311px;
+  height: 220px;
+  margin-top: 6px;
 }
 
 .modal-header .close-button {
@@ -398,12 +402,47 @@ nav .logo {
   border: none;
   outline: none;
   background: none;
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: bold;
+  position: absolute;
+  right: 27px;
+  top: 26px;
+  color: white;
+}
+
+.modal-title {
+  color: #172b4d;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: 16px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.portfolio-language {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 16px;
+  margin-top: 0;
 }
 
 .modal-body {
-  padding: 10px 15px;
+  padding: 0px 15px;
+  color: #344563;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  height: 48px;
 }
 
 #overlay {
@@ -801,6 +840,17 @@ footer {
     max-width: 1171px;
     margin: 0 auto;
     gap: 24px;
+  }
+
+  .modal {
+    width: 920px;
+    max-width: 80%;
+  }
+
+  .project-image-desktop {
+    width: 872px;
+    height: 616px;
+    margin-top: 78px;
   }
 
   .about-myself {
