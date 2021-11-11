@@ -372,7 +372,7 @@ nav .logo {
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   transition: 400ms ease-in-out;
   z-index: 10;
   width: 343px;
@@ -430,7 +430,7 @@ nav .logo {
 }
 
 .modal-body {
-  padding: 0px 15px;
+  padding: 0 15px;
   color: #344563;
   text-align: justify;
   font-weight: 400;
@@ -844,13 +844,21 @@ footer {
 
   .modal {
     width: 920px;
+    height: 1000px;
     max-width: 80%;
+    overflow: auto;
   }
 
   .project-image-desktop {
     width: 872px;
     height: 616px;
-    margin-top: 78px;
+    margin-top: 25px;
+  }
+
+  .modal-header .close-button {
+    right: 35px;
+    top: 40px;
+    color: white;
   }
 
   .about-myself {
