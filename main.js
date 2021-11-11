@@ -53,16 +53,13 @@ closeModalButtons.forEach((button) => {
 
 const form = document.getElementById('contact-form');
 const email = form.elements['email-address'];
-let emailAddress = email.value;
-const error = document.querySelector('.email-error')
-const regExp = '/^[a-z0-9_-]+@[a-z0-9]+\.[a-z]+\.?[a-z]+/g';
+const emailAddress = email.value;
+const error = document.querySelector('.email-error');
+const regExp = /^[a-z0-9_-]+@[a-z0-9]+\.[a-z]+\.?[a-z]+/g;
 
 form.addEventListener('submit', (event) => {
-  if (emailAddress != emailAddress.toLowerCase()) {
+  if (!regExp.test(email.value)) {
     event.preventDefault();
-    error.innerHTML = 'Your email address must be lowercase.'
-  } else {
-    error.textContent = '';
-    form.submit;
+    error.innerHTML = ('Your email address ' + email.value + ' is not valid');
   }
 });
