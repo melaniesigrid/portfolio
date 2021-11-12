@@ -335,7 +335,7 @@
         <div class="contact-text-container">
           <h3 class="contact-text">I'm always interested in hearing about new projects, so if you'd like to chat, please get in touch.</h3>
         </div>
-        <form class="contact-form" action="https://formspree.io/f/xwkajzob" method="POST">
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xwkajzob" method="post">
           <ul>
             <li>
               <div class="contact-image-3"></div>
@@ -344,7 +344,7 @@
               <input type="text" name="name" class="form-input name" placeholder="Full name" maxlength="30" required>
             </li>
             <li>
-              <input type="email" name="email-address" class="form-input email-address" placeholder="Email address" required>                           
+              <input id="email-valit" type="email" name="email-address" class="form-input email-address" placeholder="Email address" required>                           
             </li>
             <li class="comment">    
               <textarea name="comment" maxlength="500" class="form-input" placeholder="Enter text here" required></textarea>
@@ -352,7 +352,8 @@
             <li class="img-element">
               <div class="contact-illustration"></div>
             </li>
-            <li class="submit-container"> 
+            <li><p class="email-error"></p></li>
+            <li class="submit-container">
               <input class="submit" type="submit" name="submit" value="Get in touch">
             </li>  
           </ul>     
@@ -380,6 +381,6 @@
     <div class="separator"><hr class="rounded-footer"></div>
   </footer>
   <!--JavaScript file-->
-  <script src="main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

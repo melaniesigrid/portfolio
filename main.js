@@ -50,3 +50,15 @@ closeModalButtons.forEach((button) => {
     closeModal(modal);
   });
 });
+
+const form = document.getElementById('contact-form');
+const email = form.elements['email-address'];
+const error = document.querySelector('.email-error');
+const regExp = /^[a-z0-9_-]+@[a-z0-9]+\.[a-z]+\.?[a-z]+/g;
+
+form.addEventListener('submit', (event) => {
+  if (!regExp.test(email.value)) {
+    event.preventDefault();
+    error.innerHTML = ('Your email address is not valid.');
+  }
+});
