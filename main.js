@@ -63,3 +63,22 @@ form.addEventListener('submit', (event) => {
   }
 });
 
+// data - JSON
+
+const formData = {
+  name: "",
+  email: "",
+  textarea: "",
+};
+
+const name = document.querySelector('.name');
+const email = document.querySelector('.email');
+const textarea = document.querySelector('.textarea');
+
+function getData {
+
+};
+
+function saveData() {
+
+};
