@@ -75,7 +75,7 @@ const name = document.querySelector('.name');
 const email = document.querySelector('.email');
 const textarea = document.querySelector('.textarea');
 
-function getData {
+function getData() {
 
 };
 
