@@ -62,3 +62,4 @@ form.addEventListener('submit', (event) => {
     error.innerHTML = ('Your email address is not valid.');
   }
 });
+
