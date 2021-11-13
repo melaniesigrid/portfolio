@@ -63,22 +63,55 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-// data - JSON
+function storageAvailable(type) {
+    var storage;
+    try {
+        storage = window[type];
+        var x = '__storage_test__';
+        storage.setItem(x, x);
+        storage.removeItem(x);
+        return true;
+    }
+    catch(e) {
+        return e instanceof DOMException && (
+            // everything except Firefox
+            e.code === 22 ||
+            // Firefox
+            e.code === 1014 ||
+            // test name field too, because code might not be present
+            // everything except Firefox
+            e.name === 'QuotaExceededError' ||
+            // Firefox
+            e.name === 'NS_ERROR_DOM_QUOTA_REACHED') &&
+            // acknowledge QuotaExceededError only if there's something already stored
+            (storage && storage.length !== 0);
+    }
+}
 
-const formData = {
-  name: "",
-  email: "",
-  textarea: "",
-};
-
-const name = document.querySelector('.name');
-const email = document.querySelector('.email');
-const textarea = document.querySelector('.textarea');
-
-function getData() {
-
-};
-
-function saveData() {
-
-};
+if (storageAvailable('localStorage')) {
+  // Yippee! We can use localStorage awesomeness
+  const inputName = document.getElementById("name");
+  const inputEmail = document.getElementById("email");
+  const inputMessage = document.getElementById("comment");
+  
+  function changeValue() {
+    const allInfo = JSON.stringify({
+      name: inputName.value.trim(),
+      email: inputEmail.value.trim(),
+      comment: inputMessage.value.trim(),
+    });
+    localStorage.setItem('allInfo', allInfo);
+  }
+  form.addEventListener('change', changeValue);
+  function replaceData() {
+    const storedData = JSON.parse(localStorage.getItem('allInfo'));
+    inputName.value = storedData.name;
+    inputEmail.value = storedData.email;
+    inputMessage = storedData.comment;
+  }
+  
+  window.onload = replaceData();
+}
+else {
+  // Too bad, no localStorage for us
+}
