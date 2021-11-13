@@ -63,6 +63,26 @@ form.addEventListener('submit', (event) => {
   }
 });
 
+const inputName = document.getElementById('name');
+const inputEmail = document.getElementById('email');
+let inputMessage = document.getElementById('comment');
+
+function changeValue() {
+  const allInfo = JSON.stringify({
+    name: inputName.value.trim(),
+    email: inputEmail.value.trim(),
+    comment: inputMessage.value.trim(),
+  });
+  localStorage.setItem('allInfo', allInfo);
+}
+
+function replaceData() {
+  const storedData = JSON.parse(localStorage.getItem('allInfo'));
+  inputName.value = storedData.name;
+  inputEmail.value = storedData.email;
+  inputMessage = storedData.comment;
+}
+
 function storageAvailable(type) {
   let storage;
   try {
@@ -80,24 +100,7 @@ function storageAvailable(type) {
 
 if (storageAvailable('localStorage')) {
   // Yippee! We can use localStorage awesomeness
-  let inputName = document.getElementById("name");
-  let inputEmail = document.getElementById("email");
-  let inputMessage = document.getElementById("comment");
-  function changeValue() {
-    const allInfo = JSON.stringify({
-      name: inputName.value.trim(),
-      email: inputEmail.value.trim(),
-      comment: inputMessage.value.trim(),
-    });
-    localStorage.setItem('allInfo', allInfo);
-  }
   form.addEventListener('change', changeValue);
-  function replaceData() {
-    const storedData = JSON.parse(localStorage.getItem('allInfo'));
-    inputName.value = storedData.name;
-    inputEmail.value = storedData.email;
-    inputMessage = storedData.comment;
-  }
   window.onload = replaceData();
 }
 else {
