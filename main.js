@@ -1,5 +1,3 @@
-const { constants } = require("buffer");
-
 const mainMenu = document.querySelector('.mainMenu');
 const closeMenu = document.querySelector('.mainMenu');
 const openMenu = document.querySelector('.openMenu');
