@@ -1,3 +1,5 @@
+const { constants } = require("buffer");
+
 const mainMenu = document.querySelector('.mainMenu');
 const closeMenu = document.querySelector('.mainMenu');
 const openMenu = document.querySelector('.openMenu');
@@ -67,24 +69,22 @@ function storageAvailable(type) {
   let storage;
   try {
     storage = window[type];
-    let x = '__storage_test__';
+    const x = '__storage_test__';
     storage.setItem(x, x);
     storage.removeItem(x);
     return true;
   }
-  catch(e) {
+  catch (e) {
     return e instanceof DOMException && (
-        // everything except Firefox
-        e.code === 22 || e.code === 1014 || e.name === 'QuotaExceededError' || e.name === 'NS_ERROR_DOM_QUOTA_REACHED') && (storage && storage.length !== 0);
+      e.code === 22 || e.code === 1014 || e.name === 'QuotaExceededError' || e.name === 'NS_ERROR_DOM_QUOTA_REACHED') && (storage && storage.length !== 0);
   }
 }
 
 if (storageAvailable('localStorage')) {
   // Yippee! We can use localStorage awesomeness
-  const inputName = document.getElementById("name");
-  const inputEmail = document.getElementById("email");
-  const inputMessage = document.getElementById("comment");
-  
+  let inputName = document.getElementById("name");
+  let inputEmail = document.getElementById("email");
+  let inputMessage = document.getElementById("comment");
   function changeValue() {
     const allInfo = JSON.stringify({
       name: inputName.value.trim(),
@@ -100,7 +100,6 @@ if (storageAvailable('localStorage')) {
     inputEmail.value = storedData.email;
     inputMessage = storedData.comment;
   }
-  
   window.onload = replaceData();
 }
 else {
