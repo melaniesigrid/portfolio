@@ -62,3 +62,45 @@ form.addEventListener('submit', (event) => {
     error.innerHTML = ('Your email address is not valid.');
   }
 });
+
+const inputName = document.getElementById('name');
+const inputEmail = document.getElementById('email');
+let inputMessage = document.getElementById('comment');
+
+function changeValue() {
+  const allInfo = JSON.stringify({
+    name: inputName.value.trim(),
+    email: inputEmail.value.trim(),
+    comment: inputMessage.value.trim(),
+  });
+  localStorage.setItem('allInfo', allInfo);
+}
+
+function replaceData() {
+  const storedData = JSON.parse(localStorage.getItem('allInfo'));
+  inputName.value = storedData.name;
+  inputEmail.value = storedData.email;
+  inputMessage = storedData.comment;
+}
+
+function storageAvailable(type) {
+  let storage;
+  try {
+    storage = window[type];
+    const x = '__storage_test__';
+    storage.setItem(x, x);
+    storage.removeItem(x);
+    return true;
+  } catch (e) {
+    return e instanceof DOMException && (
+      e.code === 22 || e.code === 1014 || e.name === 'QuotaExceededError' || e.name === 'NS_ERROR_DOM_QUOTA_REACHED') && (storage && storage.length !== 0);
+  }
+}
+
+if (storageAvailable('localStorage')) {
+  // Yippee! We can use localStorage awesomeness
+  form.addEventListener('change', changeValue);
+  window.onload = replaceData();
+} else {
+  // Too bad, no localStorage for us
+}
