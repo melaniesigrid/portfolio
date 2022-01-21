@@ -8,6 +8,7 @@
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 
 header {
@@ -377,6 +378,7 @@ nav .logo {
   z-index: 10;
   width: 343px;
   height: 836px;
+  overflow-y: scroll;
 }
 
 .modal.active {
@@ -850,7 +852,6 @@ footer {
     width: 920px;
     height: 1000px;
     max-width: 80%;
-    overflow: auto;
   }
 
   .project-image-desktop {
