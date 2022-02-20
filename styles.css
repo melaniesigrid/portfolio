@@ -380,7 +380,7 @@ nav .logo {
 
 #modal1 {
   height: auto;
-  padding-bottom: 15px;
+  padding-bottom: 40px;
 }
 
 .modal {
@@ -464,6 +464,7 @@ nav .logo {
   justify-content: center;
   gap: 12px;
   height: 48px;
+  color: white;
 }
 
 .overlay {
