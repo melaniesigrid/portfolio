@@ -16,7 +16,7 @@ closeMenu.addEventListener('click', close);
 
 const openModalButtons = document.querySelectorAll('[data-modal-target]');
 const closeModalButtons = document.querySelectorAll('[data-close-button]');
-const overlay = document.getElementById('overlay');
+const overlay = document.querySelector('.overlay');
 
 function openModal(modal) {
   if (modal == null) return;

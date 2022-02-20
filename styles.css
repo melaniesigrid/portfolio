@@ -46,15 +46,18 @@ nav {
   justify-content: center;
 }
 
-.navlink:hover {
-  font-size: 33px;
-}
-
 nav .mainMenu {
   display: flex;
 }
 
 .social-links {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 2rem;
+  list-style-type: none;
+  padding: 0;
+  transition: font-size 0.2s;
   color: #505f79;
 }
 
@@ -164,6 +167,10 @@ nav .logo {
   display: none;
 }
 
+.navlink:hover {
+  font-size: 33px;
+}
+
 .hamburger {
   color: #28352f;
   font-size: 2rem;
@@ -209,15 +216,6 @@ nav .logo {
   font-weight: 400;
   text-align: center;
   line-height: 28px;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  font-size: 2rem;
-  list-style-type: none;
-  padding: 0;
 }
 
 .yes-style:hover {
@@ -468,7 +466,7 @@ nav .logo {
   height: 48px;
 }
 
-#overlay {
+.overlay {
   position: fixed;
   opacity: 0;
   transition: 200ms ease-in-out;
@@ -480,7 +478,7 @@ nav .logo {
   pointer-events: none;
 }
 
-#overlay.active {
+.overlay.active {
   opacity: 1;
   pointer-events: all;
 }
@@ -1004,10 +1002,6 @@ footer {
 
   .rounded-footer {
     display: none;
-  }
-
-  .social-links {
-    transition: font-size 0.2s;
   }
 
   .social-links:hover {
