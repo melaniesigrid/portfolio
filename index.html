@@ -30,7 +30,7 @@
 
 <body>
   <nav>
-    <div class="logo"><h4 class="welcome-text">Welcome</h4></div>
+    <div class="logo"><a href="#"><h4 class="welcome-text">Welcome</h4></a></div>
     <div class="openMenu hamburger-container"><a class="hamburger">≡</a></div>
     <ul class="mainMenu navbar-links" id="mainmenu">
           <li><a href="#portfolio" class="navlink portfolio-nav">Portfolio</a></li>
@@ -46,11 +46,11 @@
         <h3 class="large-text presentation-text">I can help you build a product, feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</h3>
         <br>
         <ul class="social-links">
-          <li><a class="yes-style" href="https://twitter.com/SiriMoon11"><i class="fab fa-twitter"></i></a></li>
-          <li><a class="yes-style" href="https://www.linkedin.com/in/melanie-arellano-92aaa9194/"><i class="fab fa-linkedin-in"></i></a></li>
-          <li><a class="yes-style" href="#"><i class="fab fa-medium-m"></i></a></li>
-          <li><a class="yes-style" href="https://github.com/melaniesigrid"><i class="fab fa-github-alt"></i></a></li>
-          <li><a class="yes-style" href="#"><i class="fab fa-angellist"></i></a></li>
+          <li><a class="yes-style" href="https://twitter.com/SiriMoon11" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+          <li><a class="yes-style" href="https://www.linkedin.com/in/melanie-arellano-92aaa9194/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a class="yes-style" href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-medium-m"></i></a></li>
+          <li><a class="yes-style" href="https://github.com/melaniesigrid" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-alt"></i></a></li>
+          <li><a class="yes-style" href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-angellist"></i></a></li>
         </ul>
         <br>
         <br>
@@ -72,6 +72,53 @@
         <br>
         <div class="card-container card-grid">
           <div class="card">
+            <div class="small-img">
+              <img class="demo-img" alt="Awesome Books" src="images/portfolioAwesome.png">
+            </div>
+            <div class="cardlet">
+              <h3 class="project-title">Awesome<br>Books</h3>
+              <ul class="languages-container">
+                <li class="language-box css">
+                  <h4 class="language-text">SCSS</h4>
+                </li>
+                <li class="language-box js">
+                  <h4 class="language-text">JavaScript</h4>
+                </li>
+                <li class="language-box html">
+                  <h4 class="language-text">HTML</h4>
+                </li>
+              </ul>
+                <br>
+                <div class="see-container">
+                  <button type="button" class="see-project" data-modal-target="#modal1">See Project</button>
+                </div>
+            </div>
+            <div class="modal" id="modal1">
+              <div class="modal-header">
+                <img src="images/portfolioAwesome.png" class="project-image-desktop" alt="Portfolio snapshot">
+                <button data-close-button class="close-button" type="button">&times;</button>
+              </div>
+              <h4 class="modal-title">Awesome Books</h4>
+              <ul class="languages-container portfolio-language">
+                <li class="language-box ruby">
+                  <h4 class="language-text">HTML</h4>
+                </li>
+                <li class="language-box css">
+                  <h4 class="language-text">SCSS</h4>
+                </li>
+                <li class="language-box js">
+                  <h4 class="language-text">JavaScript</h4>
+                </li>
+              </ul>
+              <div class="modal-body"><p><br>A beautiful page with a whimsical UI to store all your favourite books! <br>Utilizes your browser's local storage so they're always there for you when you come back. Crafted in collaboration with my colleague at Microverse, @JohnFTitor. <b>Hint: </b>click "Add Book" to submit your favourites.  Technologies used: HTML, SCSS, JavaScript.</p></div>
+              <div class="modal-buttons">
+                <a class="see-project" href="https://melaniesigrid.github.io/awesomeBooks/" target="_blank" rel="noopener noreferrer">See Live <i class="fas fa-external-link-alt"></i></a>
+                <a class="see-project" href="https://github.com/melaniesigrid/awesomeBooks" target="_blank" rel="noopener noreferrer">See Source <i class="fab fa-github-alt"></i></a>
+              </div>
+            </div>
+            <div class="overlay"></div>
+          </div>
+          <div class="card">
             <div class="cardlet">
               <h3 class="project-title">Multi-Post Stories<br>Gain+Glory</h3>
               <ul class="languages-container">
@@ -88,15 +135,16 @@
                   <h4 class="language-text">html</h4>
                 </li>
               </ul>
-                <br>            
-                <div class="see-container">
-                  <button type="button" class="see-project" data-modal-target="#modal">See Project</button>
-                </div>
+              <br>
+              <div class="see-container">
+                <button type="button" class="see-project" data-modal-target="#modal">See Project</button>
+              </div>
             </div>
+          </div>
             <div class="modal" id="modal">
               <div class="modal-header">
                 <img src="images/portfolio-snapshot-desktop.png" class="project-image-desktop" alt="Portfolio snapshot">
-                <button data-close-button class="close-button">&times;</button>
+                <button data-close-button class="close-button" type="button">&times;</button>
               </div>
               <h4 class="modal-title">Keeping track of hundreds of components</h4>
               <ul class="languages-container portfolio-language">
@@ -116,8 +164,7 @@
                 <button type="button" class="see-project">See Source  <i class="fab fa-github-alt"></i></button>
               </div>
             </div> 
-            <div id="overlay"></div>
-          </div>
+            <div class="overlay"></div>
           <div class="card">
             <div class="cardlet">
               <h3 class="project-title">Multi-Post Stories<br>Gain+Glory</h3>
@@ -141,29 +188,6 @@
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="cardlet">
-              <h3 class="project-title">Multi-Post Stories<br>Gain+Glory</h3>
-              <ul class="languages-container">
-                <li class="language-box ruby">
-                  <h4 class="language-text">Ruby on rails</h4>
-                </li>
-                <li class="language-box css">
-                  <h4 class="language-text">css</h4>
-                </li>
-                <li class="language-box js">
-                  <h4 class="language-text">JavScript</h4>
-                </li>
-                <li class="language-box html">
-                  <h4 class="language-text">html</h4>
-                </li>
-              </ul>
-              <br>
-              <div class="see-container">
-                <button type="button" class="see-project" data-modal-target="#modal">See Project</button>
-              </div>
-            </div>
-          </div>      
           <div class="card">
             <div class="cardlet">
               <h3 class="project-title">Multi-Post Stories<br>Gain+Glory</h3>
@@ -209,7 +233,7 @@
                 <button type="button" class="see-project" data-modal-target="#modal">See Project</button>
               </div>
             </div>
-          </div>        
+          </div>
           <div class="card">
             <div class="cardlet">
               <h3 class="project-title">Multi-Post Stories<br>Gain+Glory</h3>
@@ -346,7 +370,7 @@
             <li>
               <input id="email" type="email" name="email-address" class="form-input email-address" placeholder="Email address" required>                           
             </li>
-            <li class="comment">    
+            <li class="comment">
               <textarea id="comment" name="comment" maxlength="500" class="form-input" placeholder="Enter text here" required></textarea>
             </li>
             <li class="img-element">
@@ -355,8 +379,8 @@
             <li><p class="email-error"></p></li>
             <li class="submit-container">
               <input class="submit" type="submit" name="submit" value="Get in touch">
-            </li>  
-          </ul>     
+            </li>
+          </ul>
         </form>
         <div class="contact-image-1"></div>
         <div class="contact-image-2"></div>
@@ -365,11 +389,11 @@
   <footer>
     <hr class="final-separator">
     <ul class="social-links footer-social">
-      <li><a class="yes-style" href="https://twitter.com/SiriMoon11"><i class="fab fa-twitter"></i></a></li>
-      <li><a class="yes-style" href="https://www.linkedin.com/in/melanie-arellano-92aaa9194/"><i class="fab fa-linkedin-in"></i></a></li>
-      <li><a class="yes-style" href="#"><i class="fab fa-medium-m"></i></a></li>
-      <li><a class="yes-style" href="https://github.com/melaniesigrid"><i class="fab fa-github-alt"></i></a></li>
-      <li><a class="yes-style" href="#"><i class="fab fa-angellist"></i></a></li>
+      <li><a class="yes-style" href="https://twitter.com/SiriMoon11" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+      <li><a class="yes-style" href="https://www.linkedin.com/in/melanie-arellano-92aaa9194/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
+      <li><a class="yes-style" href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-medium-m"></i></a></li>
+      <li><a class="yes-style" href="https://github.com/melaniesigrid" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-alt"></i></a></li>
+      <li><a class="yes-style" href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-angellist"></i></a></li>
     </ul>
     <p class="my-email">melaniesigrid@protonmail.com</p>
     <br class="final-space">
