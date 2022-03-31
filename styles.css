@@ -549,6 +549,10 @@ nav .logo {
   padding: 12px;
 }
 
+.get-resume:visited {
+  color: white;
+}
+
 .get-resume:hover {
   opacity: 70%;
 }
