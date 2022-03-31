@@ -475,7 +475,7 @@ nav .logo {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(193, 199, 208, 0.7);
+  background-color: rgba(35, 36, 37, 0.7);
   pointer-events: none;
 }
 
@@ -547,6 +547,10 @@ nav .logo {
   font-size: 17px;
   line-height: 24px;
   padding: 12px;
+}
+
+.get-resume:visited {
+  color: white;
 }
 
 .get-resume:hover {
