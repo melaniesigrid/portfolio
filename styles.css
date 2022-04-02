@@ -378,11 +378,6 @@ nav .logo {
   opacity: 70%;
 }
 
-#modal1 {
-  height: auto;
-  padding-bottom: 40px;
-}
-
 .modal {
   position: fixed;
   top: 50%;
@@ -396,7 +391,8 @@ nav .logo {
   transition: 400ms ease-in-out;
   z-index: 10;
   width: 343px;
-  height: 836px;
+  height: auto;
+  padding-bottom: 40px;
   overflow: auto;
 }
 
