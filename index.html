@@ -5,9 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta
-    name="description"
-    content="Portfolio for Melanie Sigrid Arellano Baratto, a Software Developer.">
+  <meta name="description" content="Portfolio for Melanie Sigrid Arellano Baratto, a Software Developer.">
 
   <!-- CSS Stylesheet-->
   <link rel="stylesheet" type="text/css" href="styles.css">
@@ -43,16 +41,28 @@
 
 <body>
   <nav>
-    <div class="logo"><a href="#">
+    <div class="logo">
+      <a href="#">
         <h4 class="welcome-text">Welcome</h4>
-      </a></div>
-    <div class="openMenu hamburger-container"><a class="hamburger">≡</a></div>
+      </a>
+    </div>
+    <div class="openMenu hamburger-container">
+      <a aria-label="Open menu" class="hamburger">≡</a>
+    </div>
     <ul class="mainMenu navbar-links" id="mainmenu">
-      <li><a href="#portfolio" class="navlink portfolio-nav">Portfolio</a></li>
-      <li><a href="#about" class="navlink">About</a></li>
-      <li><a href="#contact" class="navlink">Contact</a></li>
       <li>
-        <div class="closeMenu"><i class="fas fa-times icons"></i></div>
+        <a href="#portfolio" class="navlink portfolio-nav">Portfolio</a>
+      </li>
+      <li>
+        <a href="#about" class="navlink">About</a>
+      </li>
+      <li>
+        <a href="#contact" class="navlink">Contact</a>
+      </li>
+      <li>
+        <div class="closeMenu">
+          <i class="fas fa-times icons"></i>
+        </div>
       </li>
     </ul>
   </nav>
@@ -65,21 +75,40 @@
         me.</h3>
       <br>
       <ul class="social-links">
-        <li><a class="yes-style" href="https://twitter.com/SiriMoon11" target="_blank" rel="noopener noreferrer"><i
-              class="fab fa-twitter"></i></a></li>
-        <li><a class="yes-style" href="https://www.linkedin.com/in/melaniesigrid/" target="_blank"
-            rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a class="yes-style" href="https://medium.com/@melaniesigrid" target="_blank" rel="noopener noreferrer"><i
-              class="fab fa-medium-m"></i></a></li>
-        <li><a class="yes-style" href="https://github.com/melaniesigrid" target="_blank" rel="noopener noreferrer"><i
-              class="fab fa-github-alt"></i></a></li>
-        <li><a class="yes-style" href="https://angel.co/u/melanie-sigrid-arellano-baratto" target="_blank"
-            rel="noopener noreferrer"><i class="fab fa-angellist"></i></a></li>
+        <li>
+          <a aria-label="Twitter" class="yes-style" href="https://twitter.com/SiriMoon11" target="_blank"
+            rel="noopener noreferrer">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a aria-label="Linkedin" class="yes-style" href="https://www.linkedin.com/in/melaniesigrid/" target="_blank"
+            rel="noopener noreferrer">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li>
+          <a aria-label="Medium" class="yes-style" href="https://medium.com/@melaniesigrid" target="_blank"
+            rel="noopener noreferrer">
+            <i class="fab fa-medium-m" aria-hidden="true"></i>
+          </a>
+        <li>
+          <a aria-label="GitHub" class="yes-style" href="https://github.com/melaniesigrid" target="_blank"
+            rel="noopener noreferrer">
+            <i class="fab fa-github-alt"></i>
+          </a>
+        </li>
+        <li>
+          <a aria-label="AngelList" class="yes-style" href="https://angel.co/u/melanie-sigrid-arellano-baratto"
+            target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-angellist"></i>
+          </a>
+        </li>
       </ul>
       <br>
       <br>
       <div class="chevron-container">
-        <a href="#portfolio" class="chevron-button">
+        <a aria-label="Scroll to portfolio" href="#portfolio" class="chevron-button">
           <i class="fas fa-chevron-down downward"></i>
         </a>
       </div>
@@ -542,16 +571,36 @@
   <footer>
     <hr class="final-separator">
     <ul class="social-links footer-social">
-      <li><a class="yes-style" href="https://twitter.com/SiriMoon11" target="_blank" rel="noopener noreferrer"><i
-            class="fab fa-twitter"></i></a></li>
-      <li><a class="yes-style" href="https://www.linkedin.com/in/melaniesigrid/" target="_blank"
-          rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
-      <li><a class="yes-style" href="https://medium.com/@melaniesigrid" target="_blank" rel="noopener noreferrer"><i
-            class="fab fa-medium-m"></i></a></li>
-      <li><a class="yes-style" href="https://github.com/melaniesigrid" target="_blank" rel="noopener noreferrer"><i
-            class="fab fa-github-alt"></i></a></li>
-      <li><a class="yes-style" href="https://angel.co/u/melanie-sigrid-arellano-baratto" target="_blank"
-          rel="noopener noreferrer"><i class="fab fa-angellist"></i></a></li>
+      <li>
+        <a aria-label="Twitter" class="yes-style" href="https://twitter.com/SiriMoon11" target="_blank"
+          rel="noopener noreferrer">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a aria-label="Linkedin" class="yes-style" href="https://www.linkedin.com/in/melaniesigrid/" target="_blank"
+          rel="noopener noreferrer">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+      <li>
+        <a aria-label="Medium" class="yes-style" href="https://medium.com/@melaniesigrid" target="_blank"
+          rel="noopener noreferrer">
+          <i class="fab fa-medium-m"></i>
+        </a>
+      </li>
+      <li>
+        <a aria-label="GitHub" class="yes-style" href="https://github.com/melaniesigrid" target="_blank"
+          rel="noopener noreferrer">
+          <i class="fab fa-github-alt"></i>
+        </a>
+      </li>
+      <li>
+        <a aria-label="AngelList" class="yes-style" href="https://angel.co/u/melanie-sigrid-arellano-baratto"
+          target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-angellist"></i>
+        </a>
+      </li>
     </ul>
     <p class="my-email">melaniesigrid@protonmail.com</p>
     <br class="final-space">
