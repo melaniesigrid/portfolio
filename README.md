@@ -2,7 +2,7 @@
 
 # Portfolio
 
-> A portfolio to showcase my work. 
+> A portfolio to showcase my work. Developed using a Mobile-First strategy.
 > [My Portfolio](https://melaniesigrid.github.io/portfolio/)
 
 
