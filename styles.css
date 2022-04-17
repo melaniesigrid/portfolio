@@ -394,7 +394,7 @@ nav .logo {
 }
 
 .see-project:hover {
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .see-project:active {
@@ -573,7 +573,7 @@ nav .logo {
 }
 
 .get-resume:hover {
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .get-resume:active {
@@ -766,7 +766,7 @@ textarea:focus {
 }
 
 .submit:hover {
-  box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
 }
 
 .submit:active {
