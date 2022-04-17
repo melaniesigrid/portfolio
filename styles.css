@@ -196,7 +196,7 @@ nav .logo {
   margin-left: auto;
   cursor: pointer;
   border: 0;
-  background-color: white;
+  background-color: transparent;
 }
 
 .presentation {
@@ -394,7 +394,11 @@ nav .logo {
 }
 
 .see-project:hover {
-  opacity: 70%;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.see-project:active {
+  background-color: #008552;
 }
 
 .modal {
@@ -569,7 +573,11 @@ nav .logo {
 }
 
 .get-resume:hover {
-  opacity: 70%;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.get-resume:active {
+  background-color: #008552;
 }
 
 .skill-card {
@@ -758,7 +766,11 @@ textarea:focus {
 }
 
 .submit:hover {
-  opacity: 70%;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.submit:active {
+  background-color: #008552;
 }
 
 footer {
