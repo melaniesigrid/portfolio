@@ -526,8 +526,10 @@ nav .logo {
 
 .about-myself {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Maintains vertical stacking for narrow screens */
+  align-items: center; /* Centers the content horizontally */
   text-align: center;
+  padding: 20px; /* Adds some space around the section */
   background-image: url(images/illustration\ 2-about\ me\ mobile@2x.png);
   background-repeat: no-repeat;
   background-position: bottom left;
@@ -539,7 +541,60 @@ nav .logo {
   font-weight: 700;
   font-size: 48px;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center;
+  gap: 20px;
+  max-width: 600px; /* Limits the width of the content */
+  margin: 0 auto; /* Centers the container */
+}
+
+.about-me-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.6s ease; /* Smooth hover effect */
+}
+
+.about-me-image:hover {
+  box-shadow: 10px 10px 0px #182b4e; /* Off-center solid blue shadow */
+  transform: translate(-5px, -5px); /* Adds a slight lift effect */
+}
+
+.large-text-2 {
+  font-size: 16px; /* Adjust for readability */
+  line-height: 1.6; /* Improves readability with more spacing */
+  color: #4a4a4a;
+  margin-top: 10px;
+}
+
+.get-container {
+  margin-top: 20px;
+}
+
+.get-resume {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background-color: #28a745;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.get-resume:hover {
+  background-color: #218838;
+}
+
+.large-text-container {
+  max-width: 600px;
 }
 
 .large-text-container {
@@ -679,9 +734,11 @@ nav .logo {
 }
 
 .contact-text {
+  justify-content: center;
+  text-align: center;
   color: #172b4d;
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 35px;
+  font-weight: 600;
   line-height: 52px;
   padding: 0 75px;
   margin-right: 2rem;
