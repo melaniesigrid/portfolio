@@ -115,6 +115,9 @@ nav .logo {
   cursor: pointer;
   margin-left: 40px;
 }
+.rez:hover {
+  color: #36b37e;
+}
 
 @media (max-width: 1000px) {
   nav {
@@ -206,7 +209,7 @@ nav .logo {
   gap: 24px;
   background-image: url(images/header-illustration-mobile@2x.png);
   background-size: cover;
-  padding: 114px 24px;
+  padding: 90px 24px;
 }
 
 .presentation-text {
@@ -586,6 +589,10 @@ nav .logo {
 
 .get-resume:active {
   background-color: #008552;
+}
+
+.skills {
+  margin-top: 8rem;
 }
 
 .skill-card {
