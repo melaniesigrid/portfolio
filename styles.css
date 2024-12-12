@@ -6,7 +6,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 30px;
+  width: 25px;
 }
 
 ::-webkit-scrollbar-track {
@@ -84,13 +84,13 @@ nav .mainMenu li a {
   display: inline-block;
   padding: 15px;
   color: #3a4a42;
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 44px;
 }
 
 nav.mainMenu li a:hover {
-  font-size: 18px;
+  font-size: 25px;
   opacity: 70%;
 }
 
@@ -114,6 +114,9 @@ nav .logo {
   font-size: 20px;
   cursor: pointer;
   margin-left: 40px;
+}
+.rez:hover {
+  color: #36b37e;
 }
 
 @media (max-width: 1000px) {
@@ -153,7 +156,7 @@ nav .logo {
   }
 
   nav .mainMenu li a:hover {
-    font-size: 1.4rem;
+    font-size: 2rem;
     opacity: 70%;
   }
 }
@@ -206,7 +209,7 @@ nav .logo {
   gap: 24px;
   background-image: url(images/header-illustration-mobile@2x.png);
   background-size: cover;
-  padding: 114px 24px;
+  padding: 90px 24px;
 }
 
 .presentation-text {
@@ -386,10 +389,9 @@ nav .logo {
   align-items: center;
   text-align: center;
   color: white;
-  font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  padding: 12px;
+  padding: 12px 15px;
   height: 40px;
 }
 
@@ -421,6 +423,7 @@ nav .logo {
 
 .modal.active {
   transform: translate(-50%, -50%) scale(1);
+  max-height: 90vh;
 }
 
 .modal-header {
@@ -437,7 +440,7 @@ nav .logo {
   margin-top: 6px;
 }
 
-.modal-header .close-button {
+.close-button {
   cursor: pointer;
   border: none;
   outline: none;
@@ -446,8 +449,15 @@ nav .logo {
   font-weight: bold;
   position: absolute;
   right: 27px;
-  top: 26px;
+  top: -10px;
   color: white;
+}
+
+.dark {
+  color: #28352f !important;
+}
+.dark:hover {
+  opacity: .8;
 }
 
 .modal-title {
@@ -483,6 +493,7 @@ nav .logo {
   justify-content: center;
   gap: 12px;
   height: 48px;
+  font-weight: bold;
   color: white;
 }
 
@@ -515,8 +526,10 @@ nav .logo {
 
 .about-myself {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Maintains vertical stacking for narrow screens */
+  align-items: center; /* Centers the content horizontally */
   text-align: center;
+  padding: 20px; /* Adds some space around the section */
   background-image: url(images/illustration\ 2-about\ me\ mobile@2x.png);
   background-repeat: no-repeat;
   background-position: bottom left;
@@ -528,7 +541,60 @@ nav .logo {
   font-weight: 700;
   font-size: 48px;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+  align-items: center;
+  gap: 20px;
+  max-width: 600px; /* Limits the width of the content */
+  margin: 0 auto; /* Centers the container */
+}
+
+.about-me-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.6s ease; /* Smooth hover effect */
+}
+
+.about-me-image:hover {
+  box-shadow: 10px 10px 0px #182b4e; /* Off-center solid blue shadow */
+  transform: translate(-5px, -5px); /* Adds a slight lift effect */
+}
+
+.large-text-2 {
+  font-size: 16px; /* Adjust for readability */
+  line-height: 1.6; /* Improves readability with more spacing */
+  color: #4a4a4a;
+  margin-top: 10px;
+}
+
+.get-container {
+  margin-top: 20px;
+}
+
+.get-resume {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  background-color: #28a745;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.get-resume:hover {
+  background-color: #218838;
+}
+
+.large-text-container {
+  max-width: 600px;
 }
 
 .large-text-container {
@@ -580,7 +646,12 @@ nav .logo {
   background-color: #008552;
 }
 
+.skills {
+  margin-top: 8rem;
+}
+
 .skill-card {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -663,15 +734,19 @@ nav .logo {
 }
 
 .contact-text {
+  justify-content: center;
+  text-align: center;
   color: #172b4d;
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 35px;
+  font-weight: 600;
   line-height: 52px;
   padding: 0 75px;
+  margin-right: 2rem;
 }
 
 .contact-form {
   display: flex;
+  margin-left: 2rem;
   justify-content: center;
 }
 
@@ -758,7 +833,7 @@ textarea:focus {
   border: none;
   cursor: pointer;
   text-align: center;
-  font-weight: 500;
+  font-weight: 800;
   font-size: 17px;
   line-height: 24px;
   padding: 12px;
@@ -874,7 +949,7 @@ footer {
     background-size: cover;
     background-position-x: center;
     background-position-y: top;
-    padding: 300px 0;
+    padding: 200px 0;
     transition: background 3s;
   }
 
@@ -915,6 +990,9 @@ footer {
     right: 35px;
     top: 40px;
     color: white;
+  }
+  .dark {
+    color: #28352f;
   }
 
   .about-myself {
